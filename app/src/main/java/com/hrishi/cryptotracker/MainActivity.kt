@@ -2,6 +2,7 @@ package com.hrishi.cryptotracker
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
@@ -17,9 +18,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        binding.buttonans.setOnClickListener {
-            check_price(binding.inputfield.text.toString())
-        }
+        var temp_list = mutableListOf<asset>(
+            asset("Bitcoin", "BTC", "2344543"),
+            asset("Dogecoin", "DOGE", "290.433"),
+            asset("WRXcoin", "WRX", "54.32"),
+            asset("coinBase", "CBS", "0.0024"),
+            asset("Mera COin", "MCO", "234.343"),
+            asset("Bitcoin", "BTC", "2344543"),
+        asset("Dogecoin", "DOGE", "290.433"),
+        asset("WRXcoin", "WRX", "54.32"),
+        asset("coinBase", "CBS", "0.0024"),
+        asset("Mera COin", "MCO", "234.343")
+        )
+
+        val Main_adapter = Main_RecyclerView_Adapter(temp_list)
+        binding.mainRecyclerView.adapter = Main_adapter
+        binding.mainRecyclerView.layoutManager = LinearLayoutManager(this)
+
+
 
 
 
@@ -37,10 +53,10 @@ class MainActivity : AppCompatActivity() {
         val jsonObjectRequest = object : JsonObjectRequest(
             Request.Method.GET, url, null,
             { response ->
-                binding.textView2.text = response.getString("rate")
+                //binding.textView2.text = response.getString("rate")
             },
             { error ->
-                binding.textView2.text = error.message
+                //binding.textView2.text = error.message
 
             }
 
