@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "958807112978",
+    "project_id": "crypto-tracker-hrishi",
+    "storage_bucket": "crypto-tracker-hrishi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958807112978:android:4977eced481619be5847cb",
+        "android_client_info": {
+          "package_name": "com.hrishi.cryptotracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958807112978-1i4i4n9ic1pja42vrjsuvaujto33iglg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD79KFNAVLTkvtpdYpmQt6BMmPPIZAlH2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958807112978-1i4i4n9ic1pja42vrjsuvaujto33iglg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
