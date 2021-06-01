@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
+import com.google.firebase.auth.FirebaseAuth
 import com.hrishi.cryptotracker.databinding.ActivityMainBinding
 
 const val TAG = "Main Activity"
@@ -33,6 +34,11 @@ class MainActivity : AppCompatActivity() {
         binding.addButton.setOnClickListener {
             add_asset_dialog()
         }
+
+        binding.tempLogout.setOnClickListener {
+            val auth = FirebaseAuth.getInstance()
+            auth.signOut()
+        }       //Todo Temp code
     }
 
     //Updates price of all the added coins

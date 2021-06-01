@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Crypto Tracker</string>
+    <string name="facebook_app_id">1488930798111400</string>
+    <string name="fb_login_protocol_scheme">fb1488930798111400</string>
+    <string name="webclient_id">958807112978-1i4i4n9ic1pja42vrjsuvaujto33iglg.apps.googleusercontent.com</string>
+
+
 
     <string-array name="coins">
         <item>Bitcoin - BTC</item>
@@ -7,15 +12,7 @@
         <item>Dogecoin - DOGE</item>
         <item>SHIBA INU - SHIB</item>
     </string-array>
-    <string name="title_activity_login">login</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 
 </resources>
